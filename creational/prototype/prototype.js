@@ -11,3 +11,12 @@ class TeslaCar {
 		return new TeslaCar(this.model, this.price, this.interior, this.autopilot);
 	}
 }
+
+const prototypeCar = new TeslaCar("S", 80000, "black", false);
+
+const car1 = prototypeCar.produce();
+const car2 = prototypeCar.produce();
+const car3 = prototypeCar.produce();
+
+car1.interior = "white";
+car2.autopilot = true;
