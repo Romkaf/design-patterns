@@ -36,3 +36,5 @@ class CarBuilder {
 		return this.car;
 	}
 }
+
+const car = new CarBuilder().addParktronic(true).addSignaling(true).updateEngine("V6").build();
